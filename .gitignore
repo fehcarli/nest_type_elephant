@@ -1,9 +1,10 @@
 # compiled output
 dist/
 node_modules/
-.package-lock.json
+package-lock.json
 sonar-project.properties
-src/app.module.ts
+app.module.ts
+typeOrmConfig.ts
 
 # Logs
 logs
