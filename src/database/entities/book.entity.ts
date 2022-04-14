@@ -12,7 +12,7 @@ import {IsString, MinLength, IsDefined} from 'class-validator'
 export class Book {
 
     @PrimaryGeneratedColumn("uuid")
-    Id: string;
+    uuid: string;
 
     @Column({ type: "varchar", length: "300" })
     @IsDefined({ always: true })
