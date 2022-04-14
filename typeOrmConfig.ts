@@ -2,11 +2,11 @@ import { ConnectionOptions } from "typeorm";
 
 const config: ConnectionOptions = {
     type: "postgres",
-    host: "",
+    host: "", //o endereço de hospedagem do host
     url: "", //url do serviço de banco aqui
     username: "", //nome do serviço a ser utilizado
     password: "", //hash da senha do serviço 
-    database: "BookCaseDB",
+    database: "BookCaseDB", //o nome banco de dados como aparece no serviço elephantSQL
     synchronize: false,
     migrationsRun: true,
     migrationsTableName: "MigrationHistory",
