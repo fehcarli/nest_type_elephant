@@ -8,10 +8,10 @@ import { Book } from './database/entities/book.entity'
 @Module({
   imports: [TypeOrmModule.forRoot({
     type: 'postgres',
-    host: '',
-    url: '', //url do serviço de banco aqui
-    username: '', //nome do banco a ser utilizado
-    password: '',
+    host: "", //o endereço de hospedagem do host
+    url: "", //url do serviço de banco aqui
+    username: "", //nome do serviço a ser utilizado
+    password: "", //hash da senha do serviço
     database: 'BookCaseDB',
     entities: [Book]
   }), BooksModule],
