@@ -6,7 +6,7 @@ import { Entity, PrimaryGeneratedColumn, Column,
 @Entity()
 export class Author {
     @PrimaryGeneratedColumn("uuid")
-    Id: string;
+    uuid: string;
 
     @Column({ type: "varchar", length: "100" })
     FirstName: string;

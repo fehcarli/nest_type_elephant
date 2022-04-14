@@ -41,4 +41,11 @@ export class Book {
 
     @UpdateDateColumn()
     public updatedAt;
+
+    constructor(book?: Partial<Book>) {
+        this.uuid = book?.uuid;
+        this.Name = book?.Name;
+        this.ReleaseDate = book?.ReleaseDate;
+        this.ISBN = book?.ISBN;
+      }
 }

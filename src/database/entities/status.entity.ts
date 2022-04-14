@@ -8,7 +8,7 @@ import { Entity,
 @Entity()
 export class Status {
     @PrimaryGeneratedColumn("uuid")
-    Id: string;
+    uuid: string;
 
     @Column({ type: "varchar", length: "50"})
     Name: string;
